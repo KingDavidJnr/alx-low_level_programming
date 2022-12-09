@@ -18,6 +18,10 @@ if (number < 9)
 putchar(',');
 putchar(' ');
 }
+else (number = 9)
+{
+putchar(',');
+}
 }
 
 return (0);
