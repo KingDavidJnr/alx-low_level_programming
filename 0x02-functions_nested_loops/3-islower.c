@@ -1,4 +1,4 @@
-#include "main.h'
+#include "main.h"
 
 /**
  * _islower - Displays 1 if the input is "a"
@@ -11,7 +11,6 @@
 
 int _islower(int c)
 {
-int c;
 
 if (c >= 'a' && c <= 'z')
 {
