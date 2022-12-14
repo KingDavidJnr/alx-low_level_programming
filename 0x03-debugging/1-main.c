@@ -18,7 +18,7 @@ i = 0;
 /*putchar(i);*/
 /*}*/
 
-printf("Infinite loo avoided! \\o/\n");
+printf("Infinite loop avoided! \\o/\n");
 
 return (0);
 }
