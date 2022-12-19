@@ -2,54 +2,17 @@
 #include "main.h"
 
 /**
- * rev_string - Updated values
- * @s: value to be evaluated
+ * main - displays my frustration level
+ *
  * Return: void
  */
 
-void rev_string(char *s)
+int main(void)
 {
+printf("ALX is annoying\n");
+printf("I have tried fixing this for the 25th time\n");
+printf("I am tired of the non beginner friendly program\n");
+printf("Mtchew\n");
 
-int i = 0, length;
-length = _strlen(s) - 1;
-
-while (length > i)
-{
-void swap_char(*(char s) + length, *(char s) + i);
-i++;
-length--;
-}
-}
-
-
-/**
- * _strlen - returns the length of a string
- * @s: string
- * Return: returns length
- */
-
-int _strlen(char *s)
-{
-int count, inc;
-inc = 0;
-
-for (count = 0; s[count] != '\0'; count++)
-inc++;
-
-return (inc);
-}
-
-
-/**
- * swap_char - swap two variables
- * @a: first character
- * @b: second character
- * Return: void
- */
-
-void swap_char(char *a, char *b)
-{
-char tmp = *a;
-*a = *b;
-*b = tmp;
+return (0);
 }
