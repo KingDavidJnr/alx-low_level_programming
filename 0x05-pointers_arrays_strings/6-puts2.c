@@ -1,33 +1,21 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * puts2 - print pair values
- * @str: value to be evauated
+ * puts2 - print parts of a string
+ * @str: value to be printed
  * Return: void
  */
 
 void puts2(char *str)
 {
 
-int len = 0;
-int l = 0;
-char *y = str;
-int z;
+int i = 0;
 
-while (*y != '\0')
+while (str[i] != '\0')
 {
-y++;
-len++;
-}
-
-for (z = 0 ; z <= l ; z++)
-{
-if (z % 2 == 0)
-{
-_putchar(str[z]);
-}
-
+if (i % 2 == 0)
+_putchar(str[i]);
+i++;
 }
 
 _putchar('\n');
