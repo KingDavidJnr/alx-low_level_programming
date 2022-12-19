@@ -10,26 +10,36 @@
 void rev_string(char *s)
 {
 
-int len = 0;
-int l = 0;
-char *y = s;
-int e = 0;
-int x;
-char n;
+int len = _strlen(str);
 
-while (*y != '\0')
+if (len % 2 == 0)
+len = len / 2;
+
+else
+len = (len + 1) / 2;
+
+while (str[len] != '\0')
 {
-y++;
+_putchar(str[len]);
 len++;
 }
-
-l = len - 1;
-
-for (; e < ((1 / 2) + 1); e++)
-{
-x = (l - e);
-n = s[e];
-s[e] = s[x];
-s[x] = n;
+_putchar('\n');
 }
+
+
+/**
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: returns lenght
+ */
+
+int _strlen(char *s)
+{
+int count, inc;
+inc = 0;
+
+for (count = 0; s[count] != '\0'; count++)
+inc++;
+
+return (inc);
 }
