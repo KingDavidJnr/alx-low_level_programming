@@ -10,27 +10,22 @@
 void rev_string(char *s)
 {
 
-int len = _strlen(str);
+int i = 0, length;
+length = _strlen(s) - 1;
 
-if (len % 2 == 0)
-len = len / 2;
-
-else
-len = (len + 1) / 2;
-
-while (str[len] != '\0')
+while (length > i)
 {
-_putchar(str[len]);
-len++;
+swap_char(s + length, s + i);
+i++;
+length--;
 }
-_putchar('\n');
 }
 
 
 /**
  * _strlen - returns the length of a string
  * @s: string
- * Return: returns lenght
+ * Return: returns length
  */
 
 int _strlen(char *s)
@@ -42,4 +37,19 @@ for (count = 0; s[count] != '\0'; count++)
 inc++;
 
 return (inc);
+}
+
+
+/**
+ * swap_char - swap two variables
+ * @a: first character
+ * @b: second character
+ * Return: void
+ */
+
+void swap_char(char *a, char *b)
+{
+char tmp = *a;
+*a = *b;
+*b = tmp;
 }
