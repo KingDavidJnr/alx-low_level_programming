@@ -13,7 +13,8 @@ int len = 0;
 char *y = str;
 int n;
 
-while (*y != '\0'0
+
+while (*y != '\0');
 {
 y++;
 len++;
@@ -29,7 +30,7 @@ else
 n = (len + 1) / 2;
 }
 
-for ( ; n < len ; n++)
+for (; n < len ; n++)
 {
 _putchar(str[n]);
 }
