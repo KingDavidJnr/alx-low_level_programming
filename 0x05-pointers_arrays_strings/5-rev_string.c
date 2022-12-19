@@ -15,7 +15,7 @@ length = _strlen(s) - 1;
 
 while (length > i)
 {
-void swap_char((char s) + length, (char s) + i);
+void swap_char(*(char s) + length, *(char s) + i);
 i++;
 length--;
 }
