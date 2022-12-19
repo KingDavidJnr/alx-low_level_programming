@@ -9,29 +9,37 @@
 
 void puts_half(char *str)
 {
-int len = 0;
-char *y = str;
-int n;
+int len = _strlen(str);
 
-while (*y != '\0');
-{
-y++;
-len++;
-}
 if (len % 2 == 0)
-{
-n = len / 2;
-}
+len = len / 2;
 
 else
-{
-n = (len + 1) / 2;
-}
+len = (len + 1) / 2;
 
-for (; n < len ; n++)
+while (str[len] != '\0')
 {
-_putchar(str[n]);
+_putchar(str[len]);
+lens++;
 }
 
 _putchar('\n');
+}
+
+
+/**
+ * _strlen -returns the length of a string
+ * @s: string
+ * Return: returns lengths
+ */
+
+int _strlen(char *s)
+{
+int count, inc;
+inc = 0;
+
+for (count = 0; s[count] != '\0'; count++)
+inc++;
+
+return (inc);
 }
