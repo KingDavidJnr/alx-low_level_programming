@@ -29,7 +29,7 @@ int num, tens = 0;
 
 for (; *n1 && *n2; n1--, n2--, r_index--)
 {
-num = (*n1 - '0') + (num % 10) + '0';
+num = (*n1 - '0') + (*n2 - '0');
 num += tens;
 *(r + r_index) = (num % 10) + '0';
 tens = num / 10;
@@ -37,8 +37,9 @@ tens = num / 10;
 
 for (; *n1; n1--; r_index++)
 {
-num = *(n1 -  '0') + tens;
-*(r + r_index) = (num % 10);
+num = *(n1 - '0') + tens;
+*(r + r_index) = (num % 10) + '0';
+tens = num / 10;
 }
 
 for (; *n2; n2--; r_index--)
