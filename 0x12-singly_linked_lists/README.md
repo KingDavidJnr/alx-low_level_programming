@@ -3,7 +3,7 @@
 
 -   By Julien Barbier
 -   Project will start 01-26-2023, must end by 01-27-2023 (in about 9 hours) - you're done with 0% of tasks.
--   Checker was released at 01-26-2021 12:00 PM
+-   Checker was released at 01-26-2023 12:00 PM
 -   QA review fully automated.
 
 Concepts
