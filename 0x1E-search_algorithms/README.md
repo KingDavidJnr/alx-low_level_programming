@@ -1,8 +1,6 @@
 # C - Search Algorithms
 
-This was my ALX project on search algorithms. I implemented
-various types of search algorithms and stated the corresponding space/time
-complexities for each.
+This project aims to examine one's understanding of Search Algorithms, and their consequent time complexities. This project was implememnted with the C programming language.
 
 ## Tests :heavy_check_mark:
 
